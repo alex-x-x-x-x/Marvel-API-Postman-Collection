@@ -1535,7 +1535,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "03a6af94-7687-4949-bc17-fdd5c742226f",
+        "id": "2ae41b43-c7f8-42eb-84ea-d65722fafa10",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1566,17 +1566,17 @@
     {
       "listen": "test",
       "script": {
-        "id": "061434e4-bd1a-4f62-8eea-db0008bf713b",
+        "id": "c89938eb-bd0c-4be5-a7fa-e07a1a5201de",
         "type": "text/javascript",
         "exec": [
           "",
-          "// pm.test(\"Status code is 200\", function () {",
-          "//     pm.response.to.have.status(200);",
-          "// })",
+          "pm.test(\"Status code is 200\", function () {",
+          "    pm.response.to.have.status(200);",
+          "})",
           "",
-          "// pm.test(\"Status is OK\", function () {",
-          "//     pm.response.to.have.property(\"status\", \"OK\");",
-          "// });",
+          "pm.test(\"Status is OK\", function () {",
+          "    pm.response.to.have.property(\"status\", \"OK\");",
+          "});",
           "",
           "pm.test(\"Response is JSON\", function () {",
           "    pm.response.to.have.jsonBody;",
@@ -1637,7 +1637,7 @@
   ],
   "variable": [
     {
-      "id": "d07afca7-9ebc-4acc-ba02-c93228f8710c",
+      "id": "80e46927-3427-4cec-8f7d-ba15bea4cbc6",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     }
