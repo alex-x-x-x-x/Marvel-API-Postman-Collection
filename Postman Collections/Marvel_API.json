@@ -1661,7 +1661,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "f411aefc-4242-4c56-9f8b-ee2f39492bae",
+        "id": "5a36b2cb-88c3-49ba-b817-47e908b4d126",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1677,14 +1677,12 @@
           "var pvtkey = \"3f14c98220400bb9e2203c0d1c1a952b3b91f847\";",
           "var ts = new Date().getTime();",
           "",
-          "pm.environment.set(\"ts\", ts)",
-          "pm.environment.set(\"apikey\", pubkey)",
-          "",
           "var message = ts+pvtkey+pubkey;",
           "var a = CryptoJS.MD5(message);",
+          "",
+          "pm.environment.set(\"ts\", ts)",
+          "pm.environment.set(\"apikey\", pubkey)",
           "pm.environment.set(\"hash\", a.toString())",
-          "console.log(\"Priting your timestamp \" + ts)",
-          "console.log(\"Printing your hash \" + a)",
           ""
         ]
       }
@@ -1692,7 +1690,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "2435161a-0b60-45f3-9ee4-6b3def159a1a",
+        "id": "5c5f46b5-cf5f-441e-bea8-9ec2d9095810",
         "type": "text/javascript",
         "exec": [
           "",
@@ -1763,18 +1761,18 @@
   ],
   "variable": [
     {
-      "id": "a91d104c-0eee-463d-aafc-7ac0fe35ea7e",
+      "id": "370c2b34-4b80-457e-bdb2-255c07a819bd",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "b68c3843-a1ac-41c5-b191-8ced3ca5d2bc",
+      "id": "85d9b33b-1162-4fda-abf5-5abd993cc908",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "e68f3ba6-2e4c-4c97-8aa4-9075fd095e6e",
+      "id": "ba93ec07-8ae6-4c00-90e2-80d9a93f82de",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
