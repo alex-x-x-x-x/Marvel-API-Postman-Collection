@@ -33,7 +33,7 @@
               }
             }
           ],
-          "_postman_id": "54a05c8a-e8cf-4187-a277-e497bb6f2094",
+          "id": "54a05c8a-e8cf-4187-a277-e497bb6f2094",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -41,7 +41,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{baseUrl}}/characters?ts={{ts}}&hash={{hash}}",
+              "raw": "{{baseUrl}}/characters?ts={{ts}}&hash={{hash}}&nameStartsWith=S",
               "host": [
                 "{{baseUrl}}"
               ],
@@ -69,8 +69,7 @@
                 {
                   "key": "nameStartsWith",
                   "value": "S",
-                  "description": "Return characters with names that begin with the specified string (e.g. Sp).",
-                  "disabled": true
+                  "description": "Return characters with names that begin with the specified string (e.g. Sp)."
                 },
                 {
                   "key": "modifiedSince",
@@ -201,7 +200,7 @@
           ]
         }
       ],
-      "_postman_id": "3792e1f2-f7c5-4692-b0bf-c9299563d3d2",
+      "id": "3792e1f2-f7c5-4692-b0bf-c9299563d3d2",
       "description": "Fetches list of comic characters with optional filters.\n\nSee notes on individual parameters below."
     },
     {
@@ -209,7 +208,7 @@
       "item": [
         {
           "name": "Comics",
-          "_postman_id": "5eacad05-d36b-4626-a76b-91fba0d13294",
+          "id": "5eacad05-d36b-4626-a76b-91fba0d13294",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -677,7 +676,7 @@
           ]
         }
       ],
-      "_postman_id": "1797d970-4373-4676-80da-f87f4cf9aef5",
+      "id": "1797d970-4373-4676-80da-f87f4cf9aef5",
       "description": "Fetches lists of comics with optional filters.\n\nSee notes on individual parameters below.",
       "event": [
         {
@@ -730,7 +729,7 @@
               }
             }
           ],
-          "_postman_id": "2427a0c1-5061-4c4e-af89-6aeb70bbcd4d",
+          "id": "2427a0c1-5061-4c4e-af89-6aeb70bbcd4d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -926,7 +925,7 @@
           ]
         }
       ],
-      "_postman_id": "06d34d8e-4181-4f8d-be8d-9edab4050b28",
+      "id": "06d34d8e-4181-4f8d-be8d-9edab4050b28",
       "description": "Fetches lists of comic creators with optional filters.  \nSee notes on individual parameters below."
     },
     {
@@ -956,7 +955,7 @@
               }
             }
           ],
-          "_postman_id": "a8f885d7-f72a-4d95-97f3-0c284017229b",
+          "id": "a8f885d7-f72a-4d95-97f3-0c284017229b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1122,7 +1121,7 @@
           ]
         }
       ],
-      "_postman_id": "a2a67bcf-6e5e-4278-9196-c862a0fcf8c7",
+      "id": "a2a67bcf-6e5e-4278-9196-c862a0fcf8c7",
       "description": "Fetches lists of events with optional filters.  \n  \nSee notes on individual parameters below."
     },
     {
@@ -1152,7 +1151,7 @@
               }
             }
           ],
-          "_postman_id": "cde1941a-61e2-4ef8-bfc1-681b82b100f2",
+          "id": "cde1941a-61e2-4ef8-bfc1-681b82b100f2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1336,7 +1335,7 @@
           ]
         }
       ],
-      "_postman_id": "9268cc35-b2c9-4498-8a8c-ef3542ef9d61",
+      "id": "9268cc35-b2c9-4498-8a8c-ef3542ef9d61",
       "description": "Fetches lists of comic series with optional filters.  \n  \nSee notes on individual parameters below."
     },
     {
@@ -1366,7 +1365,7 @@
               }
             }
           ],
-          "_postman_id": "7b459255-1ade-4ad4-8c56-d75fc4765ea6",
+          "id": "7b459255-1ade-4ad4-8c56-d75fc4765ea6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1520,7 +1519,7 @@
           ]
         }
       ],
-      "_postman_id": "c6551295-b4d6-4848-9ece-e4541b714667",
+      "id": "c6551295-b4d6-4848-9ece-e4541b714667",
       "description": "Fetches lists of comic stories with optional filters.\n\nSee notes on individual parameters below."
     }
   ],
@@ -1638,10 +1637,9 @@
   ],
   "variable": [
     {
-      "id": "d360b3a3-846d-4ee4-b397-9318b1f67ad4",
+      "id": "d07afca7-9ebc-4acc-ba02-c93228f8710c",
       "key": "baseUrl",
-      "value": "https://gateway.marvel.com/v1/public",
-      "type": "string"
+      "value": "https://gateway.marvel.com/v1/public"
     }
   ]
 }
