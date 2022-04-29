@@ -1661,7 +1661,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "5a36b2cb-88c3-49ba-b817-47e908b4d126",
+        "id": "069376b2-2fc1-4ea8-834a-3cb66715079d",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1675,6 +1675,7 @@
           "",
           "var pubkey = \"cc1952a474bd6ba08844d7255330d469\";",
           "var pvtkey = \"3f14c98220400bb9e2203c0d1c1a952b3b91f847\";",
+          "",
           "var ts = new Date().getTime();",
           "",
           "var message = ts+pvtkey+pubkey;",
@@ -1690,7 +1691,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "5c5f46b5-cf5f-441e-bea8-9ec2d9095810",
+        "id": "594bca17-1ddb-44ad-ba98-4175b8dae38c",
         "type": "text/javascript",
         "exec": [
           "",
@@ -1761,18 +1762,18 @@
   ],
   "variable": [
     {
-      "id": "370c2b34-4b80-457e-bdb2-255c07a819bd",
+      "id": "a3735529-0710-43bf-b506-5e4302dfbf0b",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "85d9b33b-1162-4fda-abf5-5abd993cc908",
+      "id": "98963e22-c2f9-43e7-bbe7-2564f5c1efa8",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "ba93ec07-8ae6-4c00-90e2-80d9a93f82de",
+      "id": "286ccb3c-9b83-4885-bde9-151b60168cee",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
