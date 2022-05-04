@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "5d70d457-7b01-4587-8733-de2b5eef7083",
     "name": "Marvel API",
-    "description": "Marvel API documentation for entity types",
+    "description": "## General API information\n\n**The Marvel Comics API** is a RESTful service which provides methods of accessing specific resources at canonical URLs and for searching and filtering sets of resources by various criteria.\n\n**All representations are encoded as JSON objects.**\n\n## Service endpoint\n\nThe Marvel Comics API's base endpoint is `http://gateway.marvel.com/`.\n\n## Authentication\n\n*This workspace already has the authentication set-up to work with each entity, please refer to the Pre-request Script included in this workspace*\n\nServer-side applications must pass two parameters in addition to the `apikey` parameter:\n\n*   **ts** - a timestamp (or other long strumg which can change on a request-by-request basis)\n*   **hash** — a md5 digest of the `ts` parameter, your private key and your public key (e.g, `md5`(`ts`+`privateKey`+`publicKey`)\n    \n\n*For example*, a user with a public key of `1234` and a private key of `abcd` could construct a valid call as follows:\n\n`http://gateway.marvel.com/v1/public/comics?ts=1&apikey=1234&hash=ffd275c5130566a2916217b101f26150`\n\n## Authorization Errors\n\nThe following errors are returned by the Marvel Comics API when issues with authorization occur.\n\nThese errors are returned by all endpoints.\n\n| **Error Code** | **Error Message** | **Reason for occurring** |\n| --- | --- | --- |\n| **409** | Missing API Key | Occurs when `apikey` parameter is not included with a request. |\n| **409** | Missing Hash | Occurs when `apikey` parameter is included with a request, a `ts` parameter is present, but no `hash` parameter is sent. |\n| **409** | Missing timestamp | Occurs when `ts` parameter is sent when `apikey` and `hash` parameter are present. |\n| **401** | Invalid Referrer | Occurs when a referrer which is not valid for the passed `apikey` parameter is sent. |\n| **401** | Invalid Hash | Occurs when a `ts`, `hash` and `apikey` parameter are sent but the `hash` is not valid per the above `hash` generation rule. |\n| **405** | Method Not Allowed | Occurs when an API endpoint is accessed using a HTTP verb which is not allowed for that endpoint. |\n| **403** | Forbidden | Occurs when a user with an otherwise authenticated request attempts to access an endpoint which they do not have access. |\n\n## Resources\n\nYou can access *six resources types* using the API:\n\n*   **Comics**: Individual print and digital comic issues, collections and graphic novels. For example: **Amazing Fantasy #15**.\n*   **Series**: Sequentially numbered (well, mostly sequentially numbered) group comics with the same title. For example: **Uncanny X-Men**.\n*   **Stories**: Indivisible, reusable components of comics. For example, the cover from Amazing Fantasy #15 or the origin of Spider-Man story from that comic.\n*   **Creators**: Women, men and organizations who create comics. For example: *Jack Kirby*\n*   **Characters**: The women, men, organizations, alien species, deities, animals, non-corporeal entities, trans-dimensional manifestations, abstract personifications, and green amorphous blobs which occupy the Marvel Universe (and various alternate universes, timelines and altered realities therein). For example, **Spider-Man**.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -1741,18 +1741,18 @@
   ],
   "variable": [
     {
-      "id": "7be329b9-38fb-4b6d-b5f2-7dd3f0e24cfd",
+      "id": "bcf87b0e-1709-4237-ad1d-c2aacb79cdea",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "b78bf064-d6ba-4165-bc59-74a977c6e614",
+      "id": "54997492-8f40-4a84-b467-91415a746ac3",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "cd4c6f11-a841-48a5-9857-3ae9c2d2b243",
+      "id": "b536367e-b3af-4b7e-9087-d9b7aceff2ed",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
