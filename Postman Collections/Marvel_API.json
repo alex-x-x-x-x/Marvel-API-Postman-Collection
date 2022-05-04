@@ -1661,7 +1661,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "2397c56c-d9a7-4e84-897f-edc2a231b9b9",
+        "id": "b16235c7-d4cc-4048-88db-541768e781c9",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1691,7 +1691,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "0f1dbfe2-7cb4-4174-9d08-9be2f435c04e",
+        "id": "7a8f7972-b729-4e22-9ecb-5288275bd18c",
         "type": "text/javascript",
         "exec": [
           "",
@@ -1747,14 +1747,15 @@
           "   }",
           "   etc, etc...",
           "*/",
-          "// const marveljsondata = pm.response.json();",
           "",
-          "// pm.test(\"Test response data type\", () => {",
-          "//     pm.expect(marveljsondata).to.be.an(\"object\");",
-          "//     pm.expect(marveljsondata.code).to.be.an(\"number\");",
-          "//     pm.expect(marveljsondata.data).to.be.an(\"object\");",
-          "//     pm.expect(marveljsondata.data.results).to.be.an(\"array\");",
-          "// });",
+          "const marveljsondata = pm.response.json();",
+          "",
+          "pm.test(\"Test response data type\", () => {",
+          "    pm.expect(marveljsondata).to.be.an(\"object\");",
+          "    pm.expect(marveljsondata.code).to.be.an(\"number\");",
+          "    pm.expect(marveljsondata.data).to.be.an(\"object\");",
+          "    pm.expect(marveljsondata.data.results).to.be.an(\"array\");",
+          "});",
           ""
         ]
       }
@@ -1762,18 +1763,18 @@
   ],
   "variable": [
     {
-      "id": "cd89203e-3cca-4482-abef-bf7e1033f606",
+      "id": "c7e812bb-e081-4d09-973b-770465d914a3",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "e7950095-fbce-46c6-b27d-aee9d803fcff",
+      "id": "3a94fff5-a729-45cc-b5f7-5ef5cc9b4923",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "37608013-bbe5-4b7e-8dc8-3423a177196c",
+      "id": "9b15edbe-30b4-4003-b624-6c9fd99eaf41",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
