@@ -1661,7 +1661,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "b16235c7-d4cc-4048-88db-541768e781c9",
+        "id": "92c6329d-ae1c-4cda-bda0-c635b84b9188",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1691,17 +1691,13 @@
     {
       "listen": "test",
       "script": {
-        "id": "7a8f7972-b729-4e22-9ecb-5288275bd18c",
+        "id": "b08682a7-b269-4bb7-afb8-c1127f0ef2e1",
         "type": "text/javascript",
         "exec": [
           "",
           "pm.test(\"Status code is 200\", function () {",
           "    pm.response.to.have.status(200);",
           "})",
-          "",
-          "pm.test(\"Status is OK\", function () {",
-          "    pm.response.to.have.property(\"status\", \"OK\");",
-          "});",
           "",
           "pm.test(\"Response is JSON\", function () {",
           "    pm.response.to.have.jsonBody;",
@@ -1710,25 +1706,25 @@
           "",
           "/*",
           "",
-          "Testing latency to ensure response time is under 1000 miliseconds",
-          "=> check if responseTime is less than 1000ms",
+          "Response time checks",
+          "=> Check if responseTime is less than 1000ms",
           "=> check if responseTime is above the 1000ms limit",
           "",
           "*/",
           "",
           "const limit = 1000;",
-          "console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));",
+          "console.log(\"Response time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));",
           "",
           "if (pm.response.responseTime < limit) {",
-          "    pm.test(\"Response is less than 1000ms\", function () {",
+          "    pm.test(\"Response was below than 1000ms\", function () {",
           "        pm.expect(pm.response.responseTime, \"Response time was below \" + limit + \"ms\").to.be.below(limit);",
           "",
           "    })",
           "}",
           "",
           "if (pm.response.responseTime > limit) {",
-          "    pm.test(\"Response is above the limit\", function () {",
-          "        pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.above(limit);",
+          "    pm.test(\"Response time was above the limit\", function () {",
+          "        pm.expect(pm.response.responseTime, \"Response time was above \" + limit + \" ms.\").to.be.above(limit);",
           "",
           "    })",
           "}",
@@ -1763,18 +1759,18 @@
   ],
   "variable": [
     {
-      "id": "c7e812bb-e081-4d09-973b-770465d914a3",
+      "id": "8e7c5b4e-e43a-41d3-9cb9-e98310af469c",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "3a94fff5-a729-45cc-b5f7-5ef5cc9b4923",
+      "id": "b2d0aaf5-ff36-4fed-aab7-af71e6d0ef07",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "9b15edbe-30b4-4003-b624-6c9fd99eaf41",
+      "id": "fd582364-72b9-4855-a3e0-af935a4d6483",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
