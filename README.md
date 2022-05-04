@@ -44,7 +44,7 @@ These errors are returned by all endpoints.
 
 ## Resources
 
-You can access *six resources types* using the API:
+You can access *six resource types* using the API:
 
 *   **Comics**: Individual print and digital comic issues, collections and graphic novels. For example: **Amazing Fantasy #15**.
 *   **Series**: Sequentially numbered (well, mostly sequentially numbered) group comics with the same title. For example: **Uncanny X-Men**.
