@@ -1661,7 +1661,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "92c6329d-ae1c-4cda-bda0-c635b84b9188",
+        "id": "62e47da5-25e8-48b8-9b05-6afadfadf2d5",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1691,9 +1691,16 @@
     {
       "listen": "test",
       "script": {
-        "id": "b08682a7-b269-4bb7-afb8-c1127f0ef2e1",
+        "id": "4b8de135-b735-4d29-baa1-69cec8f30b6f",
         "type": "text/javascript",
         "exec": [
+          "/*",
+          "",
+          "Status & JSON response checks:",
+          "=> Check status code",
+          "=> Check if JSON response contains body",
+          "",
+          "*/",
           "",
           "pm.test(\"Status code is 200\", function () {",
           "    pm.response.to.have.status(200);",
@@ -1759,18 +1766,18 @@
   ],
   "variable": [
     {
-      "id": "8e7c5b4e-e43a-41d3-9cb9-e98310af469c",
+      "id": "13d452bf-e0a0-4aef-9dc2-1ef1ec1e8ebe",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "b2d0aaf5-ff36-4fed-aab7-af71e6d0ef07",
+      "id": "4f39947a-a67e-4a06-aa09-cbfc41791d27",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "fd582364-72b9-4855-a3e0-af935a4d6483",
+      "id": "cb4561a1-6df7-4e92-b294-d92c95feffc9",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
