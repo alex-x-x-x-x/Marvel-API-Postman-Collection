@@ -1741,18 +1741,18 @@
   ],
   "variable": [
     {
-      "id": "bcf87b0e-1709-4237-ad1d-c2aacb79cdea",
+      "id": "8b806172-35e0-409e-bc65-eee39610d56d",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "54997492-8f40-4a84-b467-91415a746ac3",
+      "id": "1e9e26fa-050c-48c1-a638-d79793024fc5",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "b536367e-b3af-4b7e-9087-d9b7aceff2ed",
+      "id": "9f639fd8-6eaf-47bc-a503-577cfa049517",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
