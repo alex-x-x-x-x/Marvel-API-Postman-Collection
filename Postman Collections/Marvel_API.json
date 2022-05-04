@@ -1661,7 +1661,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "62e47da5-25e8-48b8-9b05-6afadfadf2d5",
+        "id": "cd3d11fe-4c7b-4177-b4f7-4560277f82e0",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1691,7 +1691,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "4b8de135-b735-4d29-baa1-69cec8f30b6f",
+        "id": "41746ff5-ac41-4745-be8e-2ffaee1ff9fa",
         "type": "text/javascript",
         "exec": [
           "/*",
@@ -1714,8 +1714,8 @@
           "/*",
           "",
           "Response time checks",
-          "=> Check if responseTime is less than 1000ms",
-          "=> check if responseTime is above the 1000ms limit",
+          "=> Check if response time is less than 1000ms limit",
+          "=> check if response time is above the 1000ms limit",
           "",
           "*/",
           "",
@@ -1734,50 +1734,25 @@
           "        pm.expect(pm.response.responseTime, \"Response time was above \" + limit + \" ms.\").to.be.above(limit);",
           "",
           "    })",
-          "}",
-          "",
-          "",
-          "/* ",
-          "=> Testing data types here, nothing too important but still valuable in case the json format is off",
-          "",
-          "",
-          "Test json response data type from marvel API ",
-          "eg, ",
-          "{ \"code\": 200, ",
-          "   \"status\": \"Ok\", ",
-          "   \"copyright\": \"© 2021 MARVEL\", ",
-          "    ",
-          "   }",
-          "   etc, etc...",
-          "*/",
-          "",
-          "const marveljsondata = pm.response.json();",
-          "",
-          "pm.test(\"Test response data type\", () => {",
-          "    pm.expect(marveljsondata).to.be.an(\"object\");",
-          "    pm.expect(marveljsondata.code).to.be.an(\"number\");",
-          "    pm.expect(marveljsondata.data).to.be.an(\"object\");",
-          "    pm.expect(marveljsondata.data.results).to.be.an(\"array\");",
-          "});",
-          ""
+          "}"
         ]
       }
     }
   ],
   "variable": [
     {
-      "id": "13d452bf-e0a0-4aef-9dc2-1ef1ec1e8ebe",
+      "id": "7be329b9-38fb-4b6d-b5f2-7dd3f0e24cfd",
       "key": "baseUrl",
       "value": "https://gateway.marvel.com/v1/public"
     },
     {
-      "id": "4f39947a-a67e-4a06-aa09-cbfc41791d27",
+      "id": "b78bf064-d6ba-4165-bc59-74a977c6e614",
       "key": "pubkey",
       "value": "{{pubkey}}",
       "type": "string"
     },
     {
-      "id": "cb4561a1-6df7-4e92-b294-d92c95feffc9",
+      "id": "cd4c6f11-a841-48a5-9857-3ae9c2d2b243",
       "key": "pvtkey",
       "value": "{{pvtkey}}",
       "type": "string"
