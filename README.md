@@ -1,7 +1,6 @@
-# Marvel API Postman Worksplace
+![128258814-f620d23e-2f5a-40bf-917b-d4de4963cba2](https://user-images.githubusercontent.com/21044119/166831269-d2e18008-d8d3-4f5a-a275-86b491b83647.png)
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/11320063-5d70d457-7b01-4587-8733-de2b5eef7083?action=collection%2Ffork&collection-url=entityId%3D11320063-5d70d457-7b01-4587-8733-de2b5eef7083%26entityType%3Dcollection%26workspaceId%3Df6b2b9e3-9c34-415d-8cbe-3eea7e9a73c7)
-
 ## General API information
 
 **The Marvel Comics API** is a RESTful service which provides methods of accessing specific resources at canonical URLs and for searching and filtering sets of resources by various criteria.
